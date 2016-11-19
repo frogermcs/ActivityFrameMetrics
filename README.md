@@ -1,5 +1,5 @@
 # ActivityFrameMetrics
-Detect janky frames with Android Nougat FrameMetrics
+Detect janky frames with Android Nougat FrameMetrics. **This library won't work (yet) with any Android SDK lower than 24.**
 
 # FrameMetrics
 Starting from Android SDK 24 (Nougat) there is a new API to monitor application UI performance. In older Android version we were be able to analyse data from last rendered 120 frames for each aby with adb shell command: `adb shell dumpsys gfxinfo framestats displays`. Now thanks you FrameMetrics this data is available directly from code and can be analysed in realtime. 
@@ -46,7 +46,7 @@ public class MyApplication extends Application {
 }
 ```
 
-By default library prints Logcat warning for every frame which was rendered longer than 17ms and Logcat error for these which was rendered longer than 34ms.
+By default library prints Logcat warning for every frame which was rendered longer than 17ms and error for these which was rendered longer than 34ms.
 
 Default values (and others) can be changed with `ActivityFrameMetrics.Builder` params:
 
