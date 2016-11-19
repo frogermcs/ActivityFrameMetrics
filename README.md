@@ -9,7 +9,7 @@ More about FrameMetrics can be found in [documentation]() and Android Nougat [wh
 # ActivityFrameMetrics
 ActivityFrameMetrics is small 1-class library which prints janky frames warnings to Logcat for each Activity.
 
-![logcat.png](https://raw.githubusercontent.com/frogermcs/activityframemetrics/master/art/logcat.png)
+![logcat.png](https://raw.githubusercontent.com/frogermcs/ActivityFrameMetrics/master/art/logcat.png)
 
 ```bash
 W/FrameMetrics: Janky frame detected on MainActivity with total duration: 23.13ms
