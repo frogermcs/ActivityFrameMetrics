@@ -1,10 +1,12 @@
 # ActivityFrameMetrics
-Detect janky frames with Android Nougat FrameMetrics. **This library won't work (yet) with any Android SDK lower than 24.**
+Detect janky frames with Android Nougat FrameMetrics. **This library won't work (yet) with any Android SDK lower than 24.** 
+
+Article which describes this library and FrameMetrics can be found on my blog: [FrameMetrics — realtime app smoothness tracking] (https://medium.com/@froger_mcs/framemetrics-realtime-app-smoothness-tracking-3d8550413c1c#.ba3ahfmbb)
 
 # FrameMetrics
 Starting from Android SDK 24 (Nougat) there is a new API to monitor application UI performance. In older Android version we were be able to analyse data from last rendered 120 frames for each aby with adb shell command: `adb shell dumpsys gfxinfo framestats displays`. Now thanks you FrameMetrics this data is available directly from code and can be analysed in realtime. 
 
-More about FrameMetrics can be found in [documentation]() and Android Nougat [what's new](https://developer.android.com/about/versions/nougat/android-7.0.html#framemetrics_api) section.
+More about FrameMetrics can be found in [documentation](https://developer.android.com/reference/android/view/FrameMetrics.html) and Android Nougat [what's new](https://developer.android.com/about/versions/nougat/android-7.0.html#framemetrics_api) section.
 
 # ActivityFrameMetrics
 ActivityFrameMetrics is small 1-class library which prints janky frames warnings to Logcat for each Activity.
